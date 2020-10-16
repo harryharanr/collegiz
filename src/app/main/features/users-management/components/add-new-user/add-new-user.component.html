@@ -1,0 +1,53 @@
+<div
+    class="page-layout simple fullwidth p-24"
+    fxLayout="row"
+    fxLayoutAlign.gt-sm="center start"
+>
+    <form
+        fxLayout="column"
+        fxFlex.lt-md="100%"
+        fxFlex.gt-sm="500px"
+    >
+        <mat-form-field appearance="outline" class="m-8">
+            <mat-label>Email</mat-label>
+            <input matInput />
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="m-8">
+            <mat-label>First Name</mat-label>
+            <input matInput />
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="m-8">
+            <mat-label>Last Name</mat-label>
+            <input matInput />
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="m-8">
+            <mat-label>Select Role</mat-label>
+            <mat-select name="plant">
+                <mat-option [value]="'id-1'">Chennai Branch Admin</mat-option>
+                <mat-option [value]="'id-1'">Coimbatore Branch Admin</mat-option>
+            </mat-select>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="m-8">
+            <mat-label>Select Branch</mat-label>
+            <mat-select name="plant" multiple>
+                <mat-option [value]="'id-1'">Chennai Branch</mat-option>
+                <mat-option [value]="'id-1'">Coimbatore Branch</mat-option>
+            </mat-select>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="m-8">
+            <mat-label>Select Department</mat-label>
+            <mat-select name="plant" multiple>
+                <mat-option [value]="'id-1'">ECE - Chennai Branch</mat-option>
+                <mat-option [value]="'id-1'">IT - Chennai Branch</mat-option>
+                <mat-option [value]="'id-1'">ECE - Coimbatore Branch</mat-option>
+                <mat-option [value]="'id-1'">IT - Coimbatore Branch</mat-option>
+            </mat-select>
+        </mat-form-field>
+
+    </form>
+</div>

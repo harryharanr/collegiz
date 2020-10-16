@@ -1,0 +1,38 @@
+<div class="page-layout simple fullwidth">
+
+    <!-- HEADER -->
+    <div class="header accent p-24" fxLayout="row" fxLayoutAlign="space-between center">
+        <h2>Users List</h2>
+        <button mat-raised-button (click)="addNewUser()">Add New User</button>
+    </div>
+    <!-- / HEADER -->
+
+    <!-- CONTENT -->
+    <div class="content p-24">
+        <ngx-datatable
+            class="material"
+            [rows]="rows"
+            [columnMode]="'force'"
+            [headerHeight]="48"
+            [footerHeight]="56"
+            [rowHeight]="'auto'"
+            [scrollbarH]="true"
+            [limit]="10">
+
+            <ngx-datatable-column name="Email" prop="emailId"></ngx-datatable-column>
+
+            <ngx-datatable-column name="First Name" prop="firstName"></ngx-datatable-column>
+
+            <ngx-datatable-column name="Last Name" prop="lastName"></ngx-datatable-column>
+            
+            <ngx-datatable-column name="Role" prop="role"></ngx-datatable-column>
+
+            <ngx-datatable-column name="Branch" prop="branch"></ngx-datatable-column>
+
+            <ngx-datatable-column name="Department" prop="department"></ngx-datatable-column>
+
+        </ngx-datatable>
+    </div>
+    <!-- / CONTENT -->
+
+</div>
